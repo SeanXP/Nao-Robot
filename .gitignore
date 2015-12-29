@@ -1,0 +1,28 @@
+# .gitignore 屏蔽部分文件
+# 添加过滤文件要在新的一行,并且其后不能有任何字符(包括空格,注释),否则过滤失败
+#
+
+#编译生成的中间文件.pyc文件
+*.pyc
+#简单编译生成的可执行文件
+#a.out
+#Mac os X生成的调试信息
+#*.dSYM/
+#Mac os X中的文件
+.DS_Store
+#vim的暂存文件
+*.swp
+#ctags生成的tags文件
+#tags
+
+#过滤Nao robot ptyhon sdk，避免上传大文件
+/python/pynaoqi-python2.7-*/
+
+# 过滤脚本配置文件
+/python/set_python_path.sh
+
+*.txt
+
+python/socket/xpserver/settings.py
+
+python/socket/android/
